@@ -4,7 +4,7 @@ My solution for the Indicium Data Engineer technical test.
 
 ## Usage
 
-There are multiple ways to use this pipeline:
+There are two ways to use this pipeline:
 
 1. **Command-Line Menu**: Run the pipeline with a command-line menu.
     ```
