@@ -1,0 +1,30 @@
+
+You can use this pipeline in two ways:
+  - Command-Line Menu
+  - args
+
+To execute with the Command-Line Menu, use this:
+ - python ./main.py
+
+To execute with args, use like this:
+ - python ./main.py --reprocess (YYYY-MM-DD)
+ - python ./main.py --sequentially
+ - python ./main.py --individually STEP_NUMBER
+ - python ./main.py --query
+
+The data from the sources is saved locally under the JSON format like this example: data/postgres/employees/2023-08-17/employees.json
+                                                                                           |         |          |          |
+                                                                                                Programatically setted
+
+Then, the data is load into memory and saved into a SQL3 database. After that, ALL data is looped and all tables and columns are populated.
+The merged_database is saved under: merged_databases/merged_database_date-YYYY-MM-DD.json
+
+The query's are saved in query_output with this formatting: query_(QUERY_DATE)_generated_at_(DATE_IT_WAS_GENERATED)
+                                                                        |                             |
+                                                                    YYYY-MM-DD               YYYY-MM-DD_HH-MM-SS
+
+The processed data is saved in the JSON format because its flexibility and usabilty.
+The merged_database is a SQL3 database because my familiarity with it. I could use something better, but for this, I think it is fine.
+
+This is all. Thanks.
+My contact: pedrohusky@live.com
